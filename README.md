@@ -2,12 +2,24 @@ The missing man pages for Lexaloffle's [Picotron fantasy workstation](https://ww
 
 # Installation
 
-Copy the `appdata/` folder to your Picotron's disk (_if prompted: Select "merge
-files"_), this will install the following files for you:
+1. Setup yotta:
+
+   - In the terminal
+   - `load #yotta`
+   - Press Ctrl-r
+   - Press x to install
+
+2. Install this package:
+   - In the terminal
+   - `yotta util install #man`
+
+This will install the following files for you:
 
 ```
 appdata
 └── system
+    ├── lib
+    │   └── man.lua  # The `man()` function for library usage
     ├── man/         # Man files live here
     └── util
         └── man.lua  # The `man` terminal utility
