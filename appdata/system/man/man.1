@@ -12,23 +12,22 @@ DESCRIPTION
 MANUAL SECTIONS
 \tThe standard sections of the manual include:
 
-\t1      User Commands from /appdata/system/util
+\t1\t\tUser Commands from /appdata/system/util
 
-\t2      System Calls such as \^ifetch\^-i
+\t2\t\tSystem Calls such as \^ifetch\^-i
 
-\t3      Picotron Lua Library Functions
+\t3\t\tPicotron Lua Library Functions
 
-\t5      File Formats and Conventions
+\twiki\tWiki pages from https://pico-8.fandom.com
 
 P8SCII FORMATTING
 \tman understands most of p8scii formatting. The \\a command to play audio is not supported.
 
 SEARCH PATH FOR MANUAL PAGES
-\tman searches /appdata/system/man for manual pages in the format <name>.<section>.
+\tman searches /appdata/system/man for local manual pages in the format <name>.<section>.
 
-EXAMPLES
-\tTo view the manual page for \^iman\^-i in the default section:
-\t\tman man
+WIKI PAGES
+\tWhen section is 'wiki', or local manual pages are not found, man will return the first search result from the unofficial PICO-8 wiki: https://pico-8.fandom.com
 
 AUTHOR
 \tCreated by Jess Telford <hi+picotron@jes.st>
