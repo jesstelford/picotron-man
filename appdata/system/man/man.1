@@ -1,0 +1,34 @@
+NAME
+\tman -- format and display the manual pages
+
+SYNOPSIS
+\tman [section] name
+
+DESCRIPTION
+\tman formats and displays the manual pages. If you specify section, man only looks in that section of the manual. name is normally the name of the manual page, which is typically the name of a command, function, or file.
+
+\tSee below for a description of where man looks for the manual page files.
+
+MANUAL SECTIONS
+\tThe standard sections of the manual include:
+
+\t1      User Commands from /appdata/system/util
+
+\t2      System Calls such as \^ifetch\^-i
+
+\t3      Picotron Lua Library Functions
+
+\t5      File Formats and Conventions
+
+P8SCII FORMATTING
+\tman understands most of p8scii formatting. The \\a command to play audio is not supported.
+
+SEARCH PATH FOR MANUAL PAGES
+\tman searches /appdata/system/man for manual pages in the format <name>.<section>.
+
+EXAMPLES
+\tTo view the manual page for \^iman\^-i in the default section:
+\t\tman man
+
+AUTHOR
+\tCreated by Jess Telford <hi+picotron@jes.st>
